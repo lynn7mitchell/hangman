@@ -3,8 +3,12 @@ var wrongGuess = 0;
 var correctGuess = 0;
 var randomWord = words[Math.floor(Math.random() * words.length)];
 var blanks = document.getElementById("blanks");
+var guessesLeft = 10;
 var gameOver = document.getElementById("game-over")
 console.log(randomWord)
+
+
+
 
 for (var i = 0; i < randomWord.length; i++) {
     var newLi = document.createElement("li");
@@ -17,6 +21,8 @@ for (var i = 0; i < randomWord.length; i++) {
 userGuessButton.addEventListener("click", function (e) {
     e.preventDefault();
     var userGuess = document.getElementById("user-guess").value;
+    var wrongLetterLi = document.createElement("li");
+
 
     if (randomWord.includes(userGuess)) {
 
@@ -33,6 +39,11 @@ userGuessButton.addEventListener("click", function (e) {
         }
     } else {
         wrongGuess++;
+        document.getElementById("wrong-letters").appendChild(wrongLetterLi);
+        wrongLetterLi.textContent = userGuess;
+
+        guessesLeft--;
+        document.getElementById("guesses-left").textContent = guessesLeft;
     }
 
     if (wrongGuess === 1) {
@@ -60,7 +71,7 @@ userGuessButton.addEventListener("click", function (e) {
 
 
     if (wrongGuess === 10) {
-        
+
         gameOver.style.display = "block";
         gameOver.childNodes[0].textContent = "You Lose!";
         console.log("WORKING")
