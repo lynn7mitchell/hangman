@@ -84,7 +84,7 @@ userGuessButton.addEventListener("click", function (e) {
 });
 
 playAgain.addEventListener("click", function(e){
-    e.preventDefault();
+    e.preventDefault(); 
     window.location.reload();
 })
 
