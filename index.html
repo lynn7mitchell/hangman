@@ -12,9 +12,10 @@
 <body>
 
     <h1>LETS Play Hangman!</h1>
-    <h2>Guesses Left: <span id="guesses-left">10</span></h2>
     <div class="game-container">
         <div class="graphic-container">
+            <h2>Guesses Left: <span id="guesses-left">10</span></h2>
+
             <img src="img/base.png" alt="base" id="base">
             <img src="img/stand.png" alt="stand" id="stand">
             <img src="img/top.png" alt="top" id="top">
@@ -31,12 +32,13 @@
 
             </ul>
             <form action="word-guess">
-                <label for="user-guest" >Guess A Letter!</label>
-                
+                <label for="user-guest">Guess A Letter!</label>
+
                 <input type="word-guess" id="user-guess">
                 <button id="user-guess-button">Submit</button>
             </form>
             <ul id="wrong-letters">
+                <li>Wrong Letters:</li>
 
             </ul>
         </div>
@@ -44,7 +46,7 @@
 
     <div id="game-over">
         <h1></h1>
-        <button>Play Again!</button>
+        <button id="play-again">Play Again!</button>
     </div>
     <script src="js/words.js"></script>
     <script src="js/script.js"></script>

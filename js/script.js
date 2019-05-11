@@ -5,6 +5,9 @@ var randomWord = words[Math.floor(Math.random() * words.length)];
 var blanks = document.getElementById("blanks");
 var guessesLeft = 10;
 var gameOver = document.getElementById("game-over")
+var playAgain = document.getElementById("play-again");
+
+
 console.log(randomWord)
 
 
@@ -73,15 +76,17 @@ userGuessButton.addEventListener("click", function (e) {
     if (wrongGuess === 10) {
 
         gameOver.style.display = "block";
-        gameOver.childNodes[0].textContent = "You Lose!";
-        console.log("WORKING")
+        gameOver.childNodes[0].textContent = "You Lose! the word was " + randomWord + ".";
     } else if (correctGuess === randomWord.length) {
         gameOver.childNodes[0].textContent("You Win!");
         gameOver.style.display = "block";
     }
 });
 
-
+playAgain.addEventListener("click", function(e){
+    e.preventDefault();
+    window.location.reload();
+})
 
 
 
