@@ -33,6 +33,7 @@ img {
     height: 40%;
     width: 40%;
     position: absolute;
+    display: none;
 }
 
 #base {
@@ -94,4 +95,8 @@ img {
     left: 258px;
     height: 23%;
     width: 22%;
+}
+
+#game-over{
+    display: none;
 }
