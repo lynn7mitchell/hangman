@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>LETS Play Hangman!</h1>
+    <div class="game-container">
+        <div class="graphic-container">
+            <img src="img/base.png" alt="base" id="base">
+            <img src="img/stand.png" alt="stand" id="stand">
+            <img src="img/top.png" alt="top" id="top">
+            <img src="img/hanger.png" alt="hanger" id="hanger">
+            <img src="img/head.png" alt="head" id="head">
+            <img src="img/body.png" alt="body" id="body">
+            <img src="img/left-arm.png" alt="left arm" id="left-arm">
+            <img src="img/right-arm.png" alt="right arm" id="right-arm">
+            <img src="img/left-leg.png" alt="left leg" id="left-leg">
+            <img src="img/right-leg.png" alt="right leg" id="right-leg">
+        </div>
+        <div class="word-container">
+            <form action="word-guess">
+                <label for="user-guest" >Guess A Letter!</label>
+                
+                <input type="word-guess" id="user-guess">
+                <button id="user-guess-button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

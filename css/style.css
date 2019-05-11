@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "EraserRegular";
+    src: url("../fonts/EraserRegular.ttf");
+}
+
+body {
+    font-family: 'EraserRegular', sans-serif;
+    color: #fff;
+    background: url("../img/chalkboard-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 50px;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.graphic-container {
+    width: 600px;
+    height: 500px;
+    /* background: #fff; */
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+    position: absolute;
+}
+
+#base {
+    bottom: 0;
+}
+
+#stand {
+    bottom: 35px;
+    height: 80%;
+}
+
+#top {
+    top: 0;
+    left: 92px;
+}
+
+#hanger {
+    top: 85px;
+    left: 184px;
+    height: 17%;
+}
+
+#head {
+    top: 136px;
+    left: 229px;
+    height: 25%;
+    width: 25%;
+}
+
+#body {
+    top: 175px;
+    left: 246px;
+    width: 20%;
+}
+
+#left-arm {
+    top: 214px;
+    left: 215px;
+    height: 23%;
+    width: 22%;
+}
+
+#right-arm {
+    top: 214px;
+    left: 264px;
+    height: 23%;
+    width: 22%;
+}
+
+#left-leg {
+    top: 273px;
+    left: 221px;
+    height: 23%;
+    width: 22%;
+}
+
+#right-leg {
+    top: 273px;
+    left: 258px;
+    height: 23%;
+    width: 22%;
+}
